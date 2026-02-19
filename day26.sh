@@ -7,6 +7,7 @@ echo " 2 location of directory"
 echo " 3 date"
 echo " 4 disk ussage of the directory"
 echo " 5 exit"
+echo "This is scam"
 
 read -p "Enter Choice form [ 1 to 4 ] : " choice
 

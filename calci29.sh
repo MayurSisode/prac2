@@ -11,7 +11,7 @@ echo " CHoice 4 division"
 
 read -p "Enter the choice " choice
 
-echo "Enter number one"
+echo "Enter nUMBER ANYe"
 read num1
 echo "Enter number two"
 read num2

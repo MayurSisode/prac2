@@ -3,6 +3,6 @@
 for i in *.txt;
 
 do 
-	echo "THis is file with(.txt) $i"
+	echo "THis is file with format of(.txt) $i"
 done
 

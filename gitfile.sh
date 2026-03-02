@@ -1,6 +1,6 @@
 #!/bin/bash
  
-
+echo "There is pull file"
 echo "This is the first march file"
 read num
 

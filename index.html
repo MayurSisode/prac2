@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html>
 <head>
     <title>My Colorful Page</title>
@@ -21,8 +22,120 @@
             padding: 10px;
             margin: 10px;
             border-radius: 5px;
+=======
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crazy Colorful Website!</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background: linear-gradient(45deg, #ff00ff, #00ffff, #ffff00, #ff0000);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            margin: 0;
+            padding: 0;
+            color: white;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        h1 {
+            font-size: 4em;
+            text-shadow: 3px 3px 0 #000, -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000;
+            animation: rainbow 3s linear infinite;
+        }
+
+        @keyframes rainbow {
+            0% { color: red; }
+            14% { color: orange; }
+            28% { color: yellow; }
+            42% { color: green; }
+            57% { color: blue; }
+            71% { color: indigo; }
+            85% { color: violet; }
+            100% { color: red; }
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            margin: 20px auto;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2em;
+            transition: all 0.3s;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .box:hover {
+            transform: scale(1.2) rotate(10deg);
+            background: rgba(255, 255, 255, 0.4);
+        }
+
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .button {
+            background: #ff00ff;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.5em;
+            border-radius: 50px;
+            cursor: pointer;
+            margin: 10px;
+            transition: all 0.3s;
+        }
+
+        .button:hover {
+            background: #00ffff;
+            transform: scale(1.1);
+>>>>>>> 60dc0e0 (added new webcode)
         }
     </style>
 </head>
 <body>
+<<<<<<< HEAD
     <h1
+=======
+    <h1>Welcome to the Crazy Colorful World!</h1>
+    <div class="box floating">Hover me!</div>
+    <div class="box floating">I'm floating!</div>
+    <button class="button">Click for Magic!</button>
+    <button class="button">Do it Again!</button>
+
+    <script>
+        const buttons = document.querySelectorAll('.button');
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                document.body.style.animation = 'none';
+                setTimeout(() => {
+                    document.body.style.animation = 'gradientBG 15s ease infinite';
+                }, 10);
+                const colors = ['#ff00ff', '#00ffff', '#ffff00', '#ff0000', '#00ff00'];
+                const randomColor = colors[Math.floor(Math.random() * colors.length)];
+                button.style.background = randomColor;
+            });
+        });
+    </script>
+</body>
+</html>
+>>>>>>> 60dc0e0 (added new webcode)

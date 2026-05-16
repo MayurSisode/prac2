@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cute Little Corner</title>
+    <style>
+        /* Soft, cozy background */
+        body {
+            background-color: #f7ede2;
+            font-family: 'Courier New', Courier, monospace;
+            color: #5c4d4d;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* The main card container */
+        .card {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 8px 16px rgba(242, 132, 130, 0.2);
+            text-align: center;
+            max-width: 350px;
+            border: 3px dashed #f28482;
+        }
+
+        /* Cute profile/avatar placeholder */
+        .avatar {
+            width: 100px;
+            height: 100px;
+            background-color: #f6bd60;
+            border-radius: 50%;
+            margin: 0 auto 15px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+        }
+
+        h1 {
+            color: #f28482;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        /* Animated floating heart button */
+        .heart-btn {
+            background-color: #f28482;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 14px;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: transform 0.2s;
+        }
+
+        .heart-btn:hover {
+            transform: scale(1.1);
+            background-color: #f5cac3;
+            color: #5c4d4d;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <!-- You can replace the emoji with an <img> tag later if you want! -->
+        <div class="avatar">🧸</div>
+        
+        <h1>Welcome Friend!</h1>
+        
+        <p>This is my cozy little spot on the internet. Thank you so much for stopping by to say hello. I hope you have a wonderful, lovely day!</p>
+        
+        <button class="heart-btn" onclick="alert('Sending you a warm hug! 🌸')">Click for Love</button>
+    </div>
+
+</body>
+</html>
